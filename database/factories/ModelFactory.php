@@ -18,3 +18,12 @@ $factory->define(App\Product::class, function (Faker\Generator $faker) {
         'description'   => $faker->text,
     ];
 });
+
+$factory->define(App\User::class, function (Faker\Generator $faker) {
+    return [
+        'name'          => $faker->name,
+        'email'         => $faker->email,
+        'password'      => 'Passwd1898;',
+        'gender'        => 'Male',
+    ];
+});

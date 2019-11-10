@@ -23,4 +23,10 @@ $router->group(['prefix'=>'api/v1'], function () use ($router) {
     $router->put('/product/{id}', 'ProductController@update');
     $router->delete('/product/{id}', 'ProductController@delete');
 
+    $router->get('/users', 'UserController@index');
+    $router->post('/user', 'UserController@create');
+    $router->get('/user/{id}', 'UserController@show');
+    $router->put('/user/{id}', 'UserController@update');
+    $router->delete('/user/{id}', 'UserController@delete');
+    
 });
